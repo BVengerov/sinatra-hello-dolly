@@ -1,17 +1,19 @@
-require "sinatra"
+# frozen_string_literal: true
 
-get "/hello" do
-  "<h1>Hello, Dolly!</h1>"
+require 'sinatra'
+
+get '/hello' do
+  '<h1>Hello, Dolly!</h1>'
 end
 
-get "/bonjour" do
-  "<h1>Bonjour, mademoiselle Dolly!</h1>"
+get '/bonjour' do
+  '<h1>Bonjour, mademoiselle Dolly!</h1>'
 end
 
-get "/servus" do
-  "<h1>Servus, Frau Dolly!</h1>"
+get '/servus' do
+  '<h1>Servus, Frau Dolly!</h1>'
 end
 
-get "/" do
+get '/' do
   erb :welcome
 end
